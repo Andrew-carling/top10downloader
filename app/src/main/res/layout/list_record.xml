@@ -4,7 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#070707"
+        android:background="#0C0C0C"
         android:padding="5dp">
 
     <TextView
@@ -12,16 +12,16 @@
             android:layout_width="119dp"
             android:layout_height="19dp"
             android:id="@+id/tvArtist2"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="16dp"
             android:textAlignment="viewStart"
             android:textSize="10sp"
             android:textStyle="normal"
             android:textColor="#F8F5F5"
-            android:layout_marginTop="12dp"
             app:layout_constraintTop_toBottomOf="@+id/tvName"
-            app:layout_constraintStart_toEndOf="@+id/ivImage"
-            app:layout_constraintHorizontal_bias="0.163" />
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvName"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="8dp" />
 
     <TextView
             android:text="TextView"
@@ -52,4 +52,5 @@
 
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="16dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

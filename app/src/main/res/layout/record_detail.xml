@@ -51,7 +51,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             android:paddingBottom="10dp" />
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="78dp"
             android:layout_height="68dp"
             tools:srcCompat="@tools:sample/avatars"

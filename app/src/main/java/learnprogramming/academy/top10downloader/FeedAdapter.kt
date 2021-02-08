@@ -15,6 +15,8 @@ import kotlinx.android.synthetic.main.list_record.view.*
 class ViewHolder(v: View) {
     val tvName: TextView = v.findViewById(R.id.tvName)
     val ivImage: ImageView = v.findViewById(R.id.ivImage)
+    val tvArtist2: TextView = v.findViewById(R.id.tvArtist2)
+
 
 
 }
@@ -57,6 +59,7 @@ class FeedAdapter(
         val currentApp = applications[position]
 
         viewHolder.tvName.text = currentApp.name
+        viewHolder.tvArtist2.text = currentApp.artist
 
 
 
