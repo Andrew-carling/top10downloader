@@ -23,9 +23,9 @@ class ParseApplications {
             xpp.setInput(xmlData.reader())
             var eventType = xpp.eventType
             var currentRecord = FeedEntry()
-            while (eventType != XmlPullParser.END_DOCUMENT){
+            while (eventType != XmlPullParser.END_DOCUMENT) {
                 val tagName = xpp.name?.toLowerCase()
-                when(eventType){
+                when (eventType) {
 
                     XmlPullParser.START_TAG -> {
 
@@ -38,8 +38,8 @@ class ParseApplications {
 
                     XmlPullParser.END_TAG -> {
 
-                        if (inEntry){
-                            when(tagName){
+                        if (inEntry) {
+                            when (tagName) {
                                 "entry" -> {
                                     applications.add(currentRecord)
                                     inEntry = false
@@ -62,8 +62,7 @@ class ParseApplications {
             }
 
 
-
-        } catch (e: Exception){
+        } catch (e: Exception) {
             e.printStackTrace()
             status = false
         }

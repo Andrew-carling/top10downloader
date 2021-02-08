@@ -3,35 +3,39 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#F5F8F8">
 
     <TextView
             android:text="TextView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="249dp"
+            android:layout_height="27dp"
             android:id="@+id/tvName"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="32dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginStart="16dp" />
 
     <TextView
             android:text="TextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/tvArtist"
-            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            app:layout_constraintTop_toBottomOf="@+id/ivImage"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:textAlignment="viewEnd"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            app:layout_constraintHorizontal_bias="0.0" />
 
     <TextView
             android:text="TextView"
@@ -43,5 +47,19 @@
             app:layout_constraintTop_toBottomOf="@+id/tvArtist"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="16dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:paddingBottom="10dp" />
+
+    <ImageView
+            android:layout_width="78dp"
+            android:layout_height="68dp"
+            tools:srcCompat="@tools:sample/avatars"
+            android:id="@+id/ivImage"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@+id/tvName"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
