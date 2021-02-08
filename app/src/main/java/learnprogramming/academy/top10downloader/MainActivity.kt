@@ -92,7 +92,7 @@ class MainActivity : AppCompatActivity() {
             R.id.mnuSongs ->
                 feedUrl = "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=%d/xml"
             R.id.mnu10,
-                R.id.mnu25 -> {
+            R.id.mnu25 -> {
                 if (!item.isChecked){
                     item.isChecked = true
                     feedLimit = 35 - feedLimit
@@ -164,4 +164,3 @@ class MainActivity : AppCompatActivity() {
 
     }
 }
-
