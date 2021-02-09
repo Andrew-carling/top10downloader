@@ -4,7 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#0C0C0C"
+        android:background="#000000"
         android:padding="5dp">
 
     <TextView
@@ -21,7 +21,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/tvName"
             app:layout_constraintHorizontal_bias="0.0"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:background="#000000" />
 
     <TextView
             android:text="TextView"
@@ -34,15 +35,14 @@
             android:layout_marginEnd="16dp"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:background="#050505"
+            android:background="#000000"
             android:fontFamily="sans-serif-light"
             android:textColor="#FDFCFC"
-            android:layout_marginStart="16dp"
             app:layout_constraintStart_toEndOf="@+id/ivImage" />
 
     <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="78dp"
-            android:layout_height="68dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             tools:srcCompat="@tools:sample/avatars"
             android:id="@+id/ivImage"
             app:layout_constraintTop_toTopOf="parent"
@@ -51,6 +51,6 @@
 
 
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="16dp" />
+            android:layout_marginStart="24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

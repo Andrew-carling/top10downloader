@@ -21,6 +21,7 @@ class FeedEntry {
     var summary: String = ""
     var imageURL: String = ""
 
+
     override fun toString(): String {
         return """
     name = $name
