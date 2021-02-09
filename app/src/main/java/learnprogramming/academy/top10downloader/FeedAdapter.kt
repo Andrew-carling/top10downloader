@@ -78,6 +78,7 @@ class FeedAdapter(
                 intent.putExtra("image", currentApp.imageURL)
                 intent.putExtra("artist", currentApp.artist)
                 intent.putExtra("summary", currentApp.summary)
+                intent.putExtra("link", currentApp.link)
                 context.startActivity(intent)
             }
 

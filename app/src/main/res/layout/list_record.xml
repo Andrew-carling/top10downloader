@@ -9,7 +9,7 @@
 
     <TextView
             android:text="TextView"
-            android:layout_width="119dp"
+            android:layout_width="0dp"
             android:layout_height="19dp"
             android:id="@+id/tvArtist2"
             android:textAlignment="viewStart"
@@ -26,7 +26,7 @@
 
     <TextView
             android:text="TextView"
-            android:layout_width="249dp"
+            android:layout_width="0dp"
             android:layout_height="27dp"
             android:id="@+id/tvName"
             app:layout_constraintTop_toTopOf="parent"
@@ -38,7 +38,8 @@
             android:background="#000000"
             android:fontFamily="sans-serif-light"
             android:textColor="#FDFCFC"
-            app:layout_constraintStart_toEndOf="@+id/ivImage" />
+            app:layout_constraintStart_toEndOf="@+id/ivImage"
+            android:layout_marginStart="16dp" />
 
     <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="60dp"

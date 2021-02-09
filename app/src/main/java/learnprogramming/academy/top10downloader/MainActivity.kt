@@ -20,6 +20,7 @@ class FeedEntry {
     var releaseDate: String = ""
     var summary: String = ""
     var imageURL: String = ""
+    var link: String? = ""
 
 
     override fun toString(): String {
@@ -28,6 +29,8 @@ class FeedEntry {
     artist = $artist
     releaseDate = $releaseDate
     imageURL = $imageURL
+    link = $link
+    
     """.trimIndent()
     }
 }

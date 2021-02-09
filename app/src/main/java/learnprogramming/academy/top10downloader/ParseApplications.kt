@@ -51,6 +51,9 @@ class ParseApplications {
                                 "releasedate" -> currentRecord.releaseDate = textValue
                                 "summary" -> currentRecord.summary = textValue
                                 "image" -> currentRecord.imageURL = textValue
+                                "link" -> currentRecord.link = xpp.getAttributeValue(null, "href")
+
+
                             }
                         }
                     }
